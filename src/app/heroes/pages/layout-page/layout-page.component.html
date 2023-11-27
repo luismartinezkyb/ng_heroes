@@ -23,7 +23,8 @@
       <mat-icon>menu</mat-icon>
     </button >
     <span  [ngStyle]="{flex: '1 1 auto'}"></span>
-    <button mat-button>Logout</button>
+    <span>{{user?.email}}</span>
+    <button mat-button (click)="onLogout()">Logout</button>
   </mat-toolbar>
   <div class="container">
     <router-outlet></router-outlet>
